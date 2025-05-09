@@ -11,8 +11,12 @@ export const Form = ({setTaskList, taskList}) => {
     const newTask = {
         id: new Date(),
         taskName: inputValue,
-        isComplated: false,
-    };
+        isCompleted: false,
+    }; 
+    if(newTask.taskName === ""){
+      return alert("Please enter a task!")
+    }
+    
     setTaskList([...taskList, newTask]);
     setInputValue("");
   };

@@ -5,11 +5,18 @@
   }
   .body {
     width: 377px;
-    height: 290px;
-    border-radius: 6px;
+    padding: 24px 16px;
+    border-radius: 8px;
+    border: 1.5px solid rgb(234, 213, 92);
+    margin-inline: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .16);
+    background: #474748cc
+  }
+  .headerText{
+    color:rgb(234, 213, 92)
   }

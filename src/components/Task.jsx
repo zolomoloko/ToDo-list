@@ -10,7 +10,7 @@ export const Task = ({ task, removeTaskList, ToggleCheckBox}) => {
           checked={task.isCompleted}
           onChange={handelToggleCheckBox}
         />
-        <p style={{ testDecoration: task.isCompleted ? "line-through" : "" }}>
+        <p style={{ textDecoration: task.isCompleted ? "line-through" : "" }}>
           {task.taskName}
         </p>
       </div>

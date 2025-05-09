@@ -1,23 +1,24 @@
+// import styles from "@/components/styles/Form.module.css"
 export const FilterButton = ({filters, setFilter, checkedFilter}) => {
-  const chooseFilter = (filter)=>{
-    setFilter(filter);
+  const chooseFilter = (list)=>{
+    setFilter(list);
   };
 
   return (
     <div>
-      {filters.map((filter) => (
+      {filters.map((list) => (
         <button 
-        onClick={()=> chooseFilter(filter)} 
+        onClick={()=> chooseFilter(list)} 
         style={{
           borderRadius:"5px", 
           border:"none", 
           backgroundColor: 
-          checkedFilter === filter
-          ? "rgba(107,114,128,1)"
-          : "rgb(68, 122, 230)",
+          checkedFilter === list
+          ? "rgb(234, 213, 92)"
+          : "rgb(84, 88, 94)",
           color: 
-          checkedFilter === filter ? "rgb(249, 250, 252)" : "rgb(1, 1, 1)"}}>
-            {filter}
+          checkedFilter === list ? "rgb(84, 88, 94)" : "rgb(234, 213, 92)"}}>
+            {list}
           </button>
       ))}
     </div>
