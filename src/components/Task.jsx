@@ -14,7 +14,7 @@ export const Task = ({ task, removeTaskList, ToggleCheckBox}) => {
           {task.taskName}
         </p>
       </div>
-      <button onClick={() => removeTaskList(task.id)}>Delete</button>
+      <button onClick={() => removeTaskList(task.id)} className={styles.deleteButton}>Delete</button>
     </div>
   );
 };

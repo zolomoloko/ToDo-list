@@ -21,10 +21,10 @@ export const Form = ({setTaskList, taskList}) => {
     setInputValue("");
   };
     return (
-      <div>
+      <div className={styles.inputButton}>
             <input 
               value={inputValue}
-              className={styles.formInput} 
+              className={styles.formInput } 
               placeholder="Add a new task..." 
               onChange={changeText}
             />

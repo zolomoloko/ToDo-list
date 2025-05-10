@@ -8,7 +8,51 @@
 .checkboxTask{
     display: flex;
     gap: 10px;
+    font-size: 16px;
+    color: #333;
 }
 .formInput{
-    
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    background: #d3dae6;
+    box-shadow: inset 5px 5px 10px #b8bfc9, inset -5px -5px 10px #eef1f6;
+    outline: none;
+    font-size: 16px;
+    color: #333;
 }
+.formBotton{
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background: #d3dae6;
+    box-shadow: 5px 5px 10px #b8bfc9, -5px -5px 10px #eef1f6;
+    color: #333;
+    cursor: pointer;
+}
+.deleteButton{
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background: #d3dae6;
+    box-shadow: 5px 5px 10px #b8bfc9, -5px -5px 10px #eef1f6;
+    color: #e82e2e;
+    cursor: pointer;
+}
+
+.inputButton {
+    display: flex;
+    gap: 15px;
+}
+.pButton{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.tooldog{
+    font-size: 16px;
+    color: #333;
+}
+
+

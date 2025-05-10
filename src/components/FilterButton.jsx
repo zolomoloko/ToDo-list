@@ -1,4 +1,4 @@
-// import styles from "@/components/styles/Form.module.css"
+ import styles from "@/components/styles/Form.module.css"
 export const FilterButton = ({filters, setFilter, checkedFilter}) => {
   const chooseFilter = (list)=>{
     setFilter(list);
@@ -7,17 +7,23 @@ export const FilterButton = ({filters, setFilter, checkedFilter}) => {
   return (
     <div>
       {filters.map((list) => (
-        <button 
+        <button className={styles.buttonguud}
         onClick={()=> chooseFilter(list)} 
         style={{
-          borderRadius:"5px", 
-          border:"none", 
+          padding:"10px 20px",
+          borderRadius:"15px", 
+          border:"none",
+          cursor:"pointer",
+          boxShadow:
+          checkedFilter === list
+          ? "5px 5px 10px rgba(255, 255, 255, 0.05), -5px -5px 10px rgba(0, 0, 0, 0.3)"
+          : "5px 5px 10px #b8bfc9, -5px -5px 10px #eef1f6",
           backgroundColor: 
           checkedFilter === list
-          ? "rgb(234, 213, 92)"
-          : "rgb(84, 88, 94)",
+          ? "#333"
+          : "#d3dae6",
           color: 
-          checkedFilter === list ? "rgb(84, 88, 94)" : "rgb(234, 213, 92)"}}>
+          checkedFilter === list ? "rgb(222, 222, 222)" : "#333"}}>
             {list}
           </button>
       ))}

@@ -1,22 +1,23 @@
 .etsegBody {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 100px;
+    background: #d3dae6;
+    height: 100vh;
   }
   .body {
-    width: 377px;
-    padding: 24px 16px;
-    border-radius: 8px;
-    border: 1.5px solid rgb(234, 213, 92);
-    margin-inline: auto;
+    background: #d3dae6;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #b8bfc9, -10px -10px 20px #eef1f6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, .16);
-    background: #474748cc
   }
-  .headerText{
-    color:rgb(234, 213, 92)
+  .headerText {
+    margin-bottom: 20px;
+    color: #333;
   }
