@@ -20,6 +20,11 @@ export const Form = ({setTaskList, taskList}) => {
     setTaskList([...taskList, newTask]);
     setInputValue("");
   };
+  const handleKeyDown =(event) =>{
+    if (event.key === "Enter"){
+      handleAdd ()
+    }
+  }
     return (
       <div className={styles.inputButton}>
             <input 
@@ -27,6 +32,7 @@ export const Form = ({setTaskList, taskList}) => {
               className={styles.formInput } 
               placeholder="Add a new task..." 
               onChange={changeText}
+              onKeyDown={handleKeyDown}
             />
             <button className={styles.formBotton} onClick={handleAdd}>Add</button>
       </div>
