@@ -5,9 +5,9 @@ export const FilterButton = ({filters, setFilter, checkedFilter}) => {
   };
 
   return (
-    <div>
+    <div className={styles.buttonguud}>
       {filters.map((list) => (
-        <button className={styles.buttonguud}
+        <button 
         onClick={()=> chooseFilter(list)} 
         style={{
           padding:"10px 20px",

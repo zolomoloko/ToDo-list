@@ -54,5 +54,8 @@
     font-size: 16px;
     color: #333;
 }
-
+.buttonguud{
+    display: flex;
+    gap: 15px;
+}
 
